@@ -168,6 +168,7 @@ export function Main() {
                       placeholder="Enter the question"
                       value={question}
                       onChange={(e) => setQuestion(e.target.value)}
+                      required
                     />
                   </div>
                   <div className="space-y-2">
@@ -177,6 +178,7 @@ export function Main() {
                       placeholder="Enter the answer"
                       value={answer}
                       onChange={(e) => setAnswer(e.target.value)}
+                      required
                     />
                   </div>
                   <div className="space-y-2">
@@ -186,6 +188,7 @@ export function Main() {
                       placeholder="Enter tags (separated by commas)"
                       value={tags}
                       onChange={(e) => setTags(e.target.value)}
+                      required
                     />
                   </div>
                   <Button type="submit" className="mt-3 w-full">
